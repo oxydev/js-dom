@@ -94,11 +94,11 @@ document.querySelector('#book-form').addEventListener('submit', function (e) {
 //Event Listener for Delete
 document.getElementById('book-list').addEventListener('click', function (e) {
     // Instantiate UI
-    const iu = new UI;
+    const ui = new UI;
     
-    iu.deleteBook(e.target);
+    ui.deleteBook(e.target);
 
     //Show message
-    iu.showAlert('Book Removed','success');
+    ui.showAlert('Book Removed','success');
     e.preventDefault();
 })
